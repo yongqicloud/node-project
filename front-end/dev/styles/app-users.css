@@ -1,0 +1,32 @@
+#btn-commit, #signin {
+  text-align: center; }
+
+body .layui-layer.layui-layer-success {
+  height: 100px;
+  overflow: hidden; }
+  body .layui-layer.layui-layer-success .layui-layer-content {
+    width: 375px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #5FB878;
+    padding: 20px;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    color: #fff; }
+
+body .layui-layer.layui-layer-faild {
+  height: 100px;
+  overflow: hidden; }
+  body .layui-layer.layui-layer-faild .layui-layer-content {
+    width: 375px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #D73A4A;
+    padding: 20px;
+    height: 100%;
+    line-height: 80px;
+    text-align: center;
+    color: #fff; }
+
+/*# sourceMappingURL=app-users.css.map */

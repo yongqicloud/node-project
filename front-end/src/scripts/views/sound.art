@@ -1,0 +1,110 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <h3 class="title-5 m-b-35 search-box" >
+      <span>音频管理</span>
+      <form class="form-header" action="" method="POST">
+        <input id="SearchAll" class="au-input au-input--xl" type="text" name="search"
+            placeholder="Search for sound &amp; catalog..." />
+        <button class="au-btn--submit" type="submit">
+            <i class="zmdi zmdi-search"></i>
+        </button>
+      </form>
+    </h3>
+    <div class="table-data__tool">
+      <div class="table-data__tool-left">
+        <div class="rs-select2--light rs-select2--md">
+          <select class="js-select2 select2-hidden-accessible" name="property" tabindex="-1" aria-hidden="true">
+            <option selected="selected">All Properties</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+          </select><span class="select2 select2-container select2-container--default" dir="ltr"
+            style="width: 127px;"><span class="selection"><span class="select2-selection select2-selection--single"
+                role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                aria-labelledby="select2-property-7j-container"><span class="select2-selection__rendered"
+                  id="select2-property-7j-container" title="All Properties">All
+                  Properties</span><span class="select2-selection__arrow" role="presentation"><b
+                    role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+              aria-hidden="true"></span></span>
+          <div class="dropDownSelect2"></div>
+        </div>
+        <button class="au-btn-filter">
+          <i class="zmdi zmdi-filter-list"></i>filters</button>
+      </div>
+      <div class="table-data__tool-right">
+        <button id="btn-add-sound" class="au-btn au-btn-icon au-btn--green au-btn--small">
+          <i class="zmdi zmdi-plus"></i>add item
+        </button>
+      </div>
+    </div>
+    <div class="table-responsive table-responsive-data2">
+      <table class="table table-data2">
+        <thead>
+          <tr>
+            <th>
+              <label class="au-checkbox">
+                <input type="checkbox">
+                <span class="au-checkmark"></span>
+              </label>
+            </th>
+            <th>id</th>
+            <th>soundstr</th>
+            <th>view_count</th>
+            <th>comments_count</th>
+            <th>cover_image</th>
+            <th>username</th>
+            <th>user_id</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{each list}}
+          <tr class="tr-shadow">
+            <td>
+              <label class="au-checkbox">
+                <input type="checkbox">
+                <span class="au-checkmark"></span>
+              </label>
+            </td>
+
+            <td>{{$value.id}}</td>
+
+            <td>
+              <span class="block-email">{{$value.soundstr}}</span>
+            </td>
+
+            <td class="desc">{{$value.view_count}}</td>
+
+            <td class="desc">{{$value.comments_count}}</td>
+            <td>{{$value.cover_image}}</td>
+
+            <td>
+              <span class="status--process">{{$value.username}}</span>
+            </td>
+
+            <td>{{$value.user_id}}</td>
+            <td>
+              <div class="table-data-feature">
+                <button class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Send">
+                  <i class="zmdi zmdi-mail-send"></i>
+                </button>
+                <button class="item btn-update" data-id="{{$value._id}}" data-toggle="tooltip" data-placement="top"
+                  title="" data-original-title="Edit">
+                  <i class="zmdi zmdi-edit"></i>
+                </button>
+                <button class="item btn-remove-sound" data-id="{{$value._id}}" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                  <i class="zmdi zmdi-delete"></i>
+                </button>
+                <button class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="More">
+                  <i class="zmdi zmdi-more"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="spacer"></tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

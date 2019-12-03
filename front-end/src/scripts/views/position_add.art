@@ -1,0 +1,52 @@
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-header">
+            <strong>Catalog</strong>
+            <small> Form</small>
+        </div>
+        <div class="card-body card-block">
+            <div class="form-group">
+                <label for="CatalogName" class=" form-control-label">Catalog Name</label>
+                <input type="text" id="CatalogName" placeholder="Enter your catalog name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Id" class=" form-control-label">id</label>
+                <input type="text" id="Id" placeholder="Enter id" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Description" class=" form-control-label">Description</label>
+                <input type="text" id="Description" placeholder="Enter street Description" class="form-control">
+            </div>
+            <!-- <div class="row form-group">
+                <div class="col-8">
+                    <div class="form-group">
+                        <label for="Pic_src" class=" form-control-label">Pic_src</label>
+                        <input type="text" id="Pic_src" placeholder="Enter your Pic_src" class="form-control">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-group">
+                        <label for="Status" class=" form-control-label">Status</label>
+                        <input type="text" id="Status" placeholder="Status" class="form-control">
+                    </div>
+                </div>
+            </div>  -->
+            <div class="form-group">
+                <label for="Pic_src" class=" form-control-label">Pic_src</label>
+                <input type="text" id="Pic_src" placeholder="Enter Pic_src" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Status" class=" form-control-label">Status</label>
+                <input type="text" id="Status" placeholder="Enter Status" class="form-control">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" id="submitCatalog"  class="btn btn-success btn-sm">
+                <i class="fa fa-dot-circle-o"></i> Submit
+            </button>
+            <button type="reset" class="btn btn-danger btn-sm">
+                <i class="fa fa-ban"></i> Reset
+            </button>
+        </div>
+    </div>
+</div>

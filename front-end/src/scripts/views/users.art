@@ -1,0 +1,45 @@
+<div class="account-item clearfix js-item-menu">
+    <div class="image">
+        <img src="/assets/images/icon/avatar-01.jpg" alt="John Doe" />
+    </div>
+    <div class="content">
+        <a class="js-acc-btn" href="javascript:;">{{nickname}}</a>
+    </div>
+    <div class="account-dropdown js-dropdown">
+        <div class="info clearfix">
+            <div class="image">
+                <a href="Javascript:;">
+                    {{if cover_image}}
+                    <img src="http://localhost:3000/uploads/{{cover_image}}" alt="">
+                    {{else}}
+                    <img src="/assets/images/icon/avatar-01.jpg" alt="John Doe" />
+                    {{/if}}
+                </a>
+            </div>
+            <div class="content">
+                <h5 class="name">
+                    <a href="Javascript:;">{{nickname}}</a>
+                </h5>
+                <span class="email">{{email}}</span>
+            </div>
+        </div>
+        <div class="account-dropdown__body">
+            
+            <div class="account-dropdown__item">
+                <a href="#index">
+                    <i class="zmdi zmdi-account"></i>Account</a>
+            </div>
+            <div class="account-dropdown__item">
+                <a href="#index">
+                    <i class="zmdi zmdi-settings"></i>Setting</a>
+            </div>
+            <div class="account-dropdown__item">
+                <a href="#index">
+                    <i class="zmdi zmdi-money-box"></i>Billing</a>
+            </div>
+        </div>
+        <div class="account-dropdown__footer">
+            <a href="#index" id="logout"><i class="zmdi zmdi-power"></i>Logout</a>
+        </div>
+    </div>
+</div>

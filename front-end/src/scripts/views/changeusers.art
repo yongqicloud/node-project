@@ -1,0 +1,48 @@
+<div class="card changeusers" >
+  <div class="card-header">修改信息</div>
+  <div class="card-body card-block">
+    <form action="" id="update-users-form" class="" enctype="multipart/form-data">
+      <div class="form-group">
+        <div class="input-group">
+            {{if info.cover_image}}
+            <img style="width: 100px;height:100px; border-radius: 50%; margin:0 auto;"
+            src="http://localhost:3000/uploads/{{info.cover_image}}">
+            {{else}}
+            <img style="width: 100px;height:100px; border-radius: 50%; margin:0 auto;"
+            src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1572595491&di=88ab4c105aa08f193bffc4858403dd77&src=http://hbimg.b0.upaiyun.com/9662a766b2e14418b22ed6e8185913c3e7562ab455df-j8mU0R_fw658" alt="">
+            {{/if}}
+        </div>
+        <input style="text-align: center; margin: 0 auto;" type="file" id="cover_image" name="cover_image">
+      </div>
+      <input type="hidden" value="{{info.username}}" id="username" name="username" placeholder="Username" class="form-control">
+      
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-user"></i>
+          </div>
+          <input type="text" value="{{info.nickname}}" id="nickname" name="nickname" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <input type="email" value="{{info.email}}" id="email" name="email" placeholder="Email" class="form-control">
+        </div>
+      </div>
+      <!-- <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon">
+            <i class="fa fa-asterisk"></i>
+          </div>
+          <input type="password" id="password" name="password" placeholder="Password" class="form-control">
+        </div>
+      </div> -->
+      <div class="form-actions form-group">
+        <button type="button" class="btn btn-success btn-sm btn-submit-update">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.card-footer {
+  display: flex !important;
+  justify-content: space-between !important; }
+
+#login {
+  color: red; }
+
+.register-link .red-signin {
+  color: red;
+  cursor: pointer; }
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .search-box span {
+    display: flex;
+    align-items: center; }
+  .search-box .form-header {
+    width: 30%;
+    display: flex; }
+    .search-box .form-header input {
+      min-width: 100px !important;
+      flex: 1; }
+    .search-box .form-header button {
+      width: 65px; }
+
+.changeusers {
+  width: 30% !important;
+  margin: 0 auto !important; }
+
+/*# sourceMappingURL=app.css.map */
